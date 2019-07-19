@@ -11,10 +11,9 @@ class Account():
         if self.balance - total >= 0:
             self.balance -= total
             return "Withdraw accepted"
-        else:
-            return "Funds Unavaible!"
+        return "Funds Unavaible!"
 acct1 = Account('Jose',100)
-print(acct1.deposit(50))
-print(acct1.withdraw(75))
-print(acct1.withdraw(500))
-print(acct1)
+print acct1.deposit(50)
+print acct1.withdraw(75)
+print acct1.withdraw(500)
+print acct1
